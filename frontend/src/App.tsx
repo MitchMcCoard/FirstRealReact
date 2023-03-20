@@ -52,7 +52,8 @@ class TeamList extends React.Component{
 }
 
 
-class Team extends React.Component{
+class Team extends React.Component<{school: string, name:string, city:string}> {
+  
   render (){
 
     var aTeam = this.props;
